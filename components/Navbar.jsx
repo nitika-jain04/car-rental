@@ -29,12 +29,20 @@ export default function Navbar() {
       </div>
 
       <div className="flex items-center gap-4 mt-4 md:mt-0 font-rubik">
-        <h2 className="hidden md:block hover:text-orange-600 hover:cursor-pointer font-medium tracking-wide">
-          Sign In
-        </h2>
-        <button className="bg-orange-600 px-4 md:px-8 py-2 md:py-3 text-white rounded-md font-bold shadow-md">
-          Register
-        </button>
+        <div>
+          <Link href="/signin">
+            <h2 className="hidden md:block hover:text-orange-600 hover:cursor-pointer font-medium tracking-wide">
+              Sign In
+            </h2>
+          </Link>
+        </div>
+        <div>
+          <Link href="/signup">
+            <button className="bg-orange-600 px-4 md:px-8 py-2 md:py-3 text-white rounded-md font-bold shadow-md">
+              Register
+            </button>
+          </Link>
+        </div>
       </div>
     </div>
   );
