@@ -12,21 +12,64 @@ export default function Vehicle() {
           adventure or business trip
         </p>
       </div>
-      <div className="flex mt-14 bg-pink-300 ml-20 mr-20">
-        <div className="flex flex-col">
-          <button>Audi A1 S-Line</button>
-          <button>VW Golf 6</button>
-          <button>Toyota Camry</button>
-          <button>BMW 320 ModernLine</button>
-          <button>Mercedes-Bens GLK</button>
-          <button>VW Passat CC</button>
+      <div className="flex mt-14 ml-20 mr-20">
+        <div className="flex flex-col gap-2 text-start">
+          <button className="text-xl font-bold px-6 py-4 tracking-wider text-left bg-orange-600 text-white">
+            Audi A1 S-Line
+          </button>
+          <button className="bg-gray-200 text-xl font-bold px-6 py-4 tracking-wider text-left hover:bg-orange-600 hover:text-white">
+            VW Golf 6
+          </button>
+          <button className="bg-gray-200 text-xl font-bold px-6 py-4 tracking-widest text-left hover:bg-orange-600 hover:text-white">
+            Toyota Camry
+          </button>
+          <button className="bg-gray-200 text-xl font-bold px-6 py-4 tracking-wider text-left hover:bg-orange-600 hover:text-white">
+            BMW 320 ModernLine
+          </button>
+          <button className="bg-gray-200 text-xl font-bold px-6 py-4 tracking-wider text-left hover:bg-orange-600 hover:text-white">
+            Mercedes-Bens GLK
+          </button>
+          <button className="bg-gray-200 text-xl font-bold px-6 py-4 tracking-wider text-left hover:bg-orange-600 hover:text-white">
+            VW Passat CC
+          </button>
         </div>
 
-        <img src="/vehicle1.jpg" alt="" />
+        <img
+          className="max-w-6xl ml-40 mr-40 max-h-96"
+          src="/vehicle1.jpg"
+          alt=""
+        />
 
-        <div>
-          <div>$45 / rent per day</div>
-          <span className="flex">
+        <div className="flex flex-col">
+          <div className="bg-orange-600 text-white px-4 py-4 text-lg font-bold">
+            $45 / rent per day
+          </div>
+          <span className="flex border-2 border-black px-5 py-2">
+            <h2>Model</h2>
+            <h2>|</h2>
+            <h2>Audi</h2>
+          </span>
+          <span className="flex border-2 border-black px-5 py-2">
+            <h2>Model</h2>
+            <h2>|</h2>
+            <h2>Audi</h2>
+          </span>
+          <span className="flex border-2 border-black px-5 py-2">
+            <h2>Model</h2>
+            <h2>|</h2>
+            <h2>Audi</h2>
+          </span>
+          <span className="flex border-2 border-black px-5 py-2">
+            <h2>Model</h2>
+            <h2>|</h2>
+            <h2>Audi</h2>
+          </span>
+          <span className="flex border-2 border-black px-5 py-2">
+            <h2>Model</h2>
+            <h2>|</h2>
+            <h2>Audi</h2>
+          </span>
+          <span className="flex border-2 border-black px-5 py-2">
             <h2>Model</h2>
             <h2>|</h2>
             <h2>Audi</h2>

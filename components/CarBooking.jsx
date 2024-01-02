@@ -28,8 +28,15 @@ export default function CarBooking() {
               onChange={(e) => setCarType(e.target.value)}
               className="w-full p-2 border rounded-md"
             >
-              <option value="">Select Car Type</option>
-              {/* Add your car type options here */}
+              <option value="" defaultValue="Select Car Type">
+                Select Car Type
+              </option>
+              <option>Audi A1 S-Line</option>
+              <option>VW Golf 6</option>
+              <option>Toyota Camry</option>
+              <option>BMW 320 ModernLine</option>
+              <option>Mercedes-Benz GLK</option>
+              <option>VW Passat CC</option>
             </select>
           </div>
 
@@ -44,8 +51,17 @@ export default function CarBooking() {
               onChange={(e) => setCarType(e.target.value)}
               className="w-full p-2 border rounded-md"
             >
-              <option value="">Select Car Type</option>
-              {/* Add your car type options here */}
+              <option
+                value="Select Pick up Location"
+                defaultValue="Select Pick up Location"
+              >
+                Select Pick up Location
+              </option>
+              <option value="Belgrade">Belgrade</option>
+              <option value="Novi Sad">Novi Sad</option>
+              <option value="Nis">Nis</option>
+              <option value="Kragujevac">Kragujevac</option>
+              <option value="Subotica">Subotica</option>
             </select>
           </div>
 
@@ -56,12 +72,18 @@ export default function CarBooking() {
             <select
               id="carType"
               name="carType"
-              value={carType}
+              value="Select Drop of location"
               onChange={(e) => setCarType(e.target.value)}
               className="w-full p-2 border rounded-md"
             >
-              <option value="">Select Car Type</option>
-              {/* Add your car type options here */}
+              <option value="" defaultValue="Select drop of Location">
+                Select Drop of Location
+              </option>
+              <option value="Belgrade">Belgrade</option>
+              <option value="Novi Sad">Novi Sad</option>
+              <option value="Nis">Nis</option>
+              <option value="Kragujevac">Kragujevac</option>
+              <option value="Subotica">Subotica</option>
             </select>
           </div>
         </div>

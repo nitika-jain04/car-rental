@@ -10,8 +10,8 @@ export default function SigninPage() {
 
   const signinUser = () => {
     signInWithEmailAndPassword(auth, email, password)
-      .then((value) => console.log("Sucess!!"))
-      .catch((err) => console.log(err));
+      .then((value) => alert("Sucess!!"))
+      .catch((err) => alert(err));
   };
 
   return (

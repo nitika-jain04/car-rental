@@ -1,6 +1,6 @@
 export default function Support() {
   return (
-    <div className="flex flex-col items-center mt-20 mb-20 bg-zinc-800 py-16 text-white font-poppins">
+    <div className="flex flex-col items-center mt-40 mb-20 bg-zinc-800 py-16 text-white font-poppins">
       <h1 className="text-5xl tracking-wide font-bold">
         Save big with our cheap car rental!
       </h1>
