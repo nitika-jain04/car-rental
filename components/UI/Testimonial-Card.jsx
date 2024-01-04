@@ -21,7 +21,7 @@ export default function TestimonialsCard({
           <h5 className="font-rubik font-medium">{location}</h5>
         </div>
         <p>
-          <PiQuotes className="ml-44 text-5xl text-orange-600 font-medium" />
+          <PiQuotes className="ml-44 text-5xl text-orange-600 font-extrabold" />
         </p>
       </div>
     </div>

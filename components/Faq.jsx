@@ -25,13 +25,6 @@ const faqData = [
 export default function Faq() {
   const [selectedQuestion, setSelectedQuestion] = useState(null);
 
-  const handleQuestionClick = (questionTitle) => {
-    // Toggle the selected question
-    setSelectedQuestion(
-      selectedQuestion === questionTitle ? null : questionTitle
-    );
-  };
-
   return (
     <div className="bg-white px-20 py-20">
       <div className="flex flex-col items-center font-poppins">
@@ -52,8 +45,6 @@ export default function Faq() {
               key={data.questionTitle}
               questionNumber={data.questionNumber}
               questionTitle={data.questionTitle}
-              answer={data.answer}
-              onClick={handleQuestionClick}
             />
           );
         })}

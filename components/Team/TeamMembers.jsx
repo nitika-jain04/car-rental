@@ -39,6 +39,7 @@ export default function TeamMembers() {
       {membersData.map((data) => {
         return (
           <TeamMembersUI
+            key={data.name}
             image={data.image}
             membername={data.name}
             designation={data.designation}

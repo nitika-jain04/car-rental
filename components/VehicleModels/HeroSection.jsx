@@ -57,6 +57,7 @@ export default function HeroSection() {
       {vehicleData.map((data) => {
         return (
           <VehicleCard
+            key={data.carName}
             image={data.image}
             carbrand={data.carBrand}
             price={data.price}

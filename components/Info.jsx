@@ -9,7 +9,7 @@ export default function Info() {
           <h1 className="font-bold text-2xl">CAR</h1>
           <h1 className="text-2xl">Rental</h1>
         </div>
-        <p className="text-gray-500 max-w-sm leading-5">
+        <p className="text-gray-500 max-w-sm leading-6">
           We offers a big range of vehicles for<br></br> all your driving needs.
           We have the<br></br> perfect car to meet your needs.
         </p>

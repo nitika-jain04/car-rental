@@ -54,7 +54,7 @@ export default function VehicleCard({
 
         <hr className="w-full mt-3 text-gray-800" />
 
-        <button className="bg-orange-600 px-5 py-4 mt-2 w-full text-white font-bold text-lg">
+        <button className="bg-orange-600 px-5 py-4 mt-2 w-full text-white font-bold shadow-slate-200 text-lg  hover:shadow-lg hover:shadow-orange-600">
           Book Ride
         </button>
       </div>
