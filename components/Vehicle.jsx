@@ -9,6 +9,7 @@ const vehicles = [
     year: 2012,
     transmission: "Manual",
     fuel: "Gasoline",
+    rent: 45,
   },
   {
     name: "VW Golf 6",
@@ -18,6 +19,7 @@ const vehicles = [
     year: 2008,
     transmission: "Manual",
     fuel: "Diesel",
+    rent: 37,
   },
   {
     name: "Toyota Camry",
@@ -27,6 +29,7 @@ const vehicles = [
     year: 2006,
     transmission: "Automatic",
     fuel: "Hybrid",
+    rent: 30,
   },
   {
     name: "BMW 320 ModernLine",
@@ -36,6 +39,7 @@ const vehicles = [
     year: 2012,
     transmission: "Manual",
     fuel: "Diesel",
+    rent: 35,
   },
   {
     name: "Mercedes Benz GLK",
@@ -45,6 +49,7 @@ const vehicles = [
     year: 2006,
     transmission: "Manual",
     fuel: "Diesel",
+    rent: 50,
   },
   {
     name: "VW Passat CC",
@@ -54,8 +59,51 @@ const vehicles = [
     year: 2008,
     transmission: "Automatic",
     fuel: "Gasoline",
+    rent: 25,
   },
 ];
+
+const VehicleDetails = ({ vehicle }) => {
+  return (
+    <div>
+      <div className="flex gap-5 justify-center border border-black px-2 py-2">
+        <h2>Model</h2>
+        <h2>|</h2>
+        <p>{vehicle.model}</p>
+      </div>
+      <div className="flex gap-5 justify-center border border-black px-2 py-2">
+        <h2>Mark</h2>
+        <h2>|</h2>
+        <p>{vehicle.mark}</p>
+      </div>
+      <div className="flex gap-5 justify-center border border-black px-2 py-2">
+        <h2>Year</h2>
+        <h2>|</h2>
+        <p>{vehicle.year}</p>
+      </div>
+      <div className="flex gap-5 justify-center border border-black px-2 py-2">
+        <h2>Doors</h2>
+        <h2>|</h2>
+        <p>4/5</p>
+      </div>
+      <div className="flex gap-5 justify-center border border-black px-2 py-2">
+        <h2>AC</h2>
+        <h2>|</h2>
+        <p>Yes</p>
+      </div>
+      <div className="flex gap-5 justify-center border border-black px-2 py-2">
+        <h2>Transmission</h2>
+        <h2>|</h2>
+        <p>{vehicle.transmission}</p>
+      </div>
+      <div className="flex gap-5 justify-center border border-black px-2 py-2">
+        <h2>Fuel</h2>
+        <h2>|</h2>
+        <p>{vehicle.fuel}</p>
+      </div>
+    </div>
+  );
+};
 
 export default function Vehicle() {
   const [selectedVehicle, setSelectedVehicle] = useState(vehicles[0]);
@@ -77,12 +125,12 @@ export default function Vehicle() {
           adventure or business trip
         </p>
       </div>
-      <div className="flex mt-14 justify-evenly">
-        <div className="flex flex-col gap-2 text-start ml-20">
+      <div className="flex mt-14 justify-between">
+        <div className="flex flex-col gap-2 text-start ml-16">
           {vehicles.map((vehicle, index) => (
             <button
               key={index}
-              className={`text-xl font-bold px-6 py-4 tracking-wider text-left ${
+              className={`text-xl font-bold px-6 py-4 tracking-wide text-left ${
                 selectedVehicle.name === vehicle.name
                   ? "bg-orange-600 text-white"
                   : "bg-gray-200 hover:bg-orange-600 hover:text-white"
@@ -94,28 +142,18 @@ export default function Vehicle() {
           ))}
         </div>
         <img
-          className="max-w-6xl ml-32 mr-32 max-h-96"
+          className="max-w-6xl ml-28 mr-28 max-h-96"
           src={selectedVehicle.image}
           alt=""
         />
         <div className="flex flex-col w-72 mr-20">
           <div className="bg-orange-600 text-white text-center px-4 py-1 tracking-wide">
-            <span className="text-2xl font-semibold">$45</span> / rent per day
+            <span className="text-2xl font-semibold">
+              ${selectedVehicle.rent}
+            </span>{" "}
+            / rent per day
           </div>
-          <div>
-            {vehicles.map((vehicle) => (
-              <span
-                key={vehicle.model}
-                className="flex border text-sm border-black gap-5 justify-center px-12 py-3"
-                onClick={() => handleVehicleChange(vehicle)}
-              >
-                <h2>{vehicle.model}</h2>
-                <h2>|</h2>
-                <h2>{vehicle.mark}</h2>
-              </span>
-            ))}
-          </div>
-
+          {selectedVehicle && <VehicleDetails vehicle={selectedVehicle} />}
           <div className="bg-orange-600 text-white text-center px-4 py-3 text-sm font-bold mt-5">
             <button className="text-xl font-bold">RESERVE NOW</button>
           </div>

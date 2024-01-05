@@ -1,4 +1,3 @@
-import Navbar from "../components/Navbar.jsx";
 import HomePage from "../components/HomePage.jsx";
 import CarBooking from "@/components/CarBooking.jsx";
 import Services from "@/components/Services.jsx";
@@ -13,7 +12,6 @@ import Info from "@/components/Info.jsx";
 export default function Home() {
   return (
     <div className="font-sans">
-      <Navbar />
       <HomePage />
       <CarBooking />
       <Services />

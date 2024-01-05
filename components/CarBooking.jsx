@@ -17,7 +17,7 @@ export default function CarBooking() {
 
   return (
     <div className="bg-white">
-      <form className="max-w-7xl mx-auto mt-28 p-12 bg-white rounded-md drop-shadow-xl">
+      <form className="max-w-7xl mx-auto mt-5 p-12 bg-white rounded-md drop-shadow-xl">
         <h1 className="text-2xl font-bold">Book a Car</h1>
         <div className="flex gap-10 mt-6">
           <div className="w-96">

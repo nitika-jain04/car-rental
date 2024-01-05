@@ -1,5 +1,4 @@
 import FaqCard from "./UI/FaqCard";
-import { useState } from "react";
 
 const faqData = [
   {
@@ -23,8 +22,6 @@ const faqData = [
 ];
 
 export default function Faq() {
-  const [selectedQuestion, setSelectedQuestion] = useState(null);
-
   return (
     <div className="bg-white px-20 py-20">
       <div className="flex flex-col items-center font-poppins">
@@ -38,13 +35,14 @@ export default function Faq() {
         </p>
       </div>
 
-      <div className="mt-10 shadow-lg ml-60 mr-60">
+      <div className="mt-10 shadow-lg ml-52 mr-52">
         {faqData.map((data) => {
           return (
             <FaqCard
               key={data.questionTitle}
               questionNumber={data.questionNumber}
               questionTitle={data.questionTitle}
+              answer={data.answer}
             />
           );
         })}
