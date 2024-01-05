@@ -22,7 +22,7 @@ export default function SigninPage() {
         <input
           type="email"
           placeholder="Email"
-          className="w-80 border-red-200 border-2"
+          className="w-80 border-red-200 border-2 px-2"
           onChange={(e) => setEmail(e.target.value)}
           value={email}
         ></input>
@@ -33,7 +33,7 @@ export default function SigninPage() {
         <input
           type="password"
           placeholder="Password"
-          className="w-80 border-red-200 border-2"
+          className="w-80 border-red-200 border-2 px-2"
           onChange={(e) => setPassword(e.target.value)}
           value={password}
         ></input>
@@ -41,7 +41,7 @@ export default function SigninPage() {
 
       <button
         onClick={signinUser}
-        className="flex ml-20 mt-5 w-28 px-5 py-2 bg-red-400 text-white"
+        className="flex ml-20 mt-5 w-20 px-2 py-2 bg-red-400 text-white text-center"
       >
         Sign in
       </button>

@@ -20,11 +20,11 @@ export default function HeroSection() {
           </p>
           <div className="flex gap-5 mt-10">
             <button className="flex items-center gap-2 bg-orange-600 text-white font-bold px-8 py-5 shadow-2xl rounded-sm">
-              <h1>Book Ride</h1>
+              <h1 className="font-bold tracking-wide">Book Ride</h1>
               <FaRegCheckCircle className="text-xl" />
             </button>
-            <button className="flex items-center gap-2 bg-black text-white font-bold px-8 py-5 rounded-sm hover:bg-white hover:text-black hover:border-black border border-transparent hover:border-2 transition duration-300">
-              <h1>Learn More</h1>
+            <button className="flex items-center gap-2 bg-black text-white font-bold px-8 py-5 rounded-sm hover:bg-white hover:text-black hover:border-black border-2 transition duration-150">
+              <h1 className="font-bold tracking-wide">Learn More</h1>
               <GoChevronRight className="text-2xl font-extrabold" />
             </button>
           </div>

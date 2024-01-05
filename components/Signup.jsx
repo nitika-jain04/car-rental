@@ -1,14 +1,8 @@
 import React, { useState } from "react";
-import {
-  createUserWithEmailAndPassword,
-  getAuth,
-  GoogleAuthProvider,
-  signInWithPopup,
-} from "firebase/auth";
+import { createUserWithEmailAndPassword, getAuth } from "firebase/auth";
 import { app } from "../firebase.js";
 
 const auth = getAuth(app);
-const googleProvider = new GoogleAuthProvider();
 
 export default function SignupPage() {
   const [email, setEmail] = useState("");
@@ -20,12 +14,8 @@ export default function SignupPage() {
     );
   };
 
-  const signupWithGoogle = () => {
-    signInWithPopup(auth, googleProvider);
-  };
-
   return (
-    <div className="flex flex-col gap-5">
+    <div className="flex flex-col gap-5 justify-center">
       <h1 className="ml-48 font-bold">Sign up Page</h1>
       <div className="flex gap-2 px-10 py-5">
         <label>Email</label>
@@ -35,7 +25,7 @@ export default function SignupPage() {
           value={email}
           placeholder="Enter your email here"
           required
-          className="w-80 border-red-200 border-2"
+          className="w-80 border-red-200 border-2 px-2"
         ></input>
       </div>
 
@@ -47,18 +37,12 @@ export default function SignupPage() {
           value={password}
           placeholder="Enter your password here"
           required
-          className="w-80 border-red-200 border-2"
+          className="w-80 border-red-200 border-2 px-2"
         ></input>
       </div>
 
       <br />
 
-      <button
-        onClick={signupWithGoogle}
-        className="flex ml-20 w-48 px-5 py-2 bg-red-400 text-white"
-      >
-        Sign in with Google
-      </button>
       <button
         onClick={createUser}
         className="flex ml-20 w-28 px-5 py-2 bg-red-400 text-white"

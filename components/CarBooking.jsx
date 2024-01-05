@@ -145,7 +145,7 @@ export default function CarBooking() {
           <button
             type="button"
             onClick={handleSearch}
-            className="bg-orange-600 text-white px-2 py-2 w-96 mt-8 h-12 font-bold text-lg"
+            className="bg-orange-600 text-white px-2 py-2 w-96 mt-8 h-12 font-bold text-lg hover:drop-shadow-xl hover:shadow-orange-600"
           >
             Search
           </button>

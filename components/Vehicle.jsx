@@ -147,14 +147,14 @@ export default function Vehicle() {
           alt=""
         />
         <div className="flex flex-col w-72 mr-20">
-          <div className="bg-orange-600 text-white text-center px-4 py-1 tracking-wide">
-            <span className="text-2xl font-semibold">
+          <div className="bg-orange-600 flex items-center text-white px-4 py-1 tracking-wide justify-center">
+            <span className="text-2xl font-semibold mr-2">
               ${selectedVehicle.rent}
-            </span>{" "}
+            </span>
             / rent per day
           </div>
           {selectedVehicle && <VehicleDetails vehicle={selectedVehicle} />}
-          <div className="bg-orange-600 text-white text-center px-4 py-3 text-sm font-bold mt-5">
+          <div className="bg-orange-600 text-white text-center px-4 py-3 text-sm font-bold mt-5 shadow-xl">
             <button className="text-xl font-bold">RESERVE NOW</button>
           </div>
         </div>
