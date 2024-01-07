@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { TbCar } from "react-icons/tb";
 import { FaLocationDot } from "react-icons/fa6";
 import { CiCalendarDate } from "react-icons/ci";
+import BookingConfirmation from "./Booking-Confirmation";
 
 export default function CarBooking() {
   const [carType, setCarType] = useState("");
@@ -9,10 +10,14 @@ export default function CarBooking() {
   const [pickupDate, setPickupDate] = useState("");
   const [dropoffLocation, setDropoffLocation] = useState("");
   const [dropoffDate, setDropoffDate] = useState("");
+  const [showComponent, setShowComponent] = useState(false);
 
-  const handleSearch = () => {
-    // Implement your search logic here
-    console.log("Searching...");
+  const handleCustomerInfo = () => {
+    setShowComponent(true);
+  };
+
+  const handleCloseModal = () => {
+    setShowComponent(false);
   };
 
   return (
@@ -142,13 +147,18 @@ export default function CarBooking() {
             />
           </div>
 
-          <button
-            type="button"
-            onClick={handleSearch}
-            className="bg-orange-600 text-white px-2 py-2 w-96 mt-8 h-12 font-bold text-lg hover:drop-shadow-xl hover:shadow-orange-600"
-          >
-            Search
-          </button>
+          <div>
+            <button
+              type="button"
+              onClick={handleCustomerInfo}
+              className="bg-orange-600 text-white px-2 py-2 w-96 mt-8 h-12 font-bold text-lg hover:drop-shadow-xl hover:shadow-orange-600"
+            >
+              Search
+            </button>
+            {showComponent && (
+              <BookingConfirmation onClose={handleCloseModal} />
+            )}
+          </div>
         </div>
       </form>
     </div>
