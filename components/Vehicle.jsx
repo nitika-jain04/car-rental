@@ -113,24 +113,26 @@ export default function Vehicle() {
   };
 
   return (
-    <div className="mt-28">
+    <div className="mt-10 sm:mt-20 md:mt-28">
       <div className="text-center mt-5">
-        <h5 className="text-2xl font-semibold tracking-wide">Vehicle Models</h5>
-        <h1 className="text-4xl font-extrabold mt-3 tracking-wide">
+        <h5 className="text-lg sm:text-xl md:text-2xl font-semibold tracking-wide">
+          Vehicle Models
+        </h5>
+        <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold mt-3 tracking-wide">
           Our rental fleet
         </h1>
-        <p className="text-gray-500 text-md mt-3">
+        <p className="text-gray-500 text-sm sm:text-md md:text-lg mt-3">
           Choose from a variety of our amazing vehicles to rent for your next
           <br />
           adventure or business trip
         </p>
       </div>
-      <div className="flex mt-14 justify-between">
-        <div className="flex flex-col gap-2 text-start ml-16">
+      <div className="flex flex-col mt-8 sm:mt-12 md:mt-14 lg:mt-16 justify-between sm:flex-row md:flex-row">
+        <div className="flex flex-col gap-2 text-start sm:ml-4 md:ml-16 lg:ml-16 xl:ml-16">
           {vehicles.map((vehicle, index) => (
             <button
               key={index}
-              className={`text-xl font-bold px-6 py-4 tracking-wide text-left ${
+              className={`text-md sm:text-lg md:text-xl font-bold px-4 sm:px-6 py-2 sm:py-3 md:py-4 tracking-wide text-left ${
                 selectedVehicle.name === vehicle.name
                   ? "bg-orange-600 text-white"
                   : "bg-gray-200 hover:bg-orange-600 hover:text-white"
@@ -142,20 +144,22 @@ export default function Vehicle() {
           ))}
         </div>
         <img
-          className="max-w-6xl ml-28 mr-28 max-h-96"
+          className="w-full sm:w-2/5 md:w-2/5 lg:w-1/3 xl:w-1/3 mx-auto mt-4 sm:mt-0 md:mt-0"
           src={selectedVehicle.image}
           alt=""
         />
-        <div className="flex flex-col w-72 mr-20">
-          <div className="bg-orange-600 flex items-center text-white px-4 py-1 tracking-wide justify-center">
-            <span className="text-2xl font-semibold mr-2">
+        <div className="flex flex-col w-full sm:w-1/4 md:w-1/4 lg:w-1/4 xl:w-1/4 mx-auto mt-4 sm:mt-0 md:mt-0">
+          <div className="bg-orange-600 flex items-center text-white px-2 py-1 sm:px-4 sm:py-2 md:py-1 tracking-wide justify-center">
+            <span className="text-sm sm:text-lg md:text-xl font-semibold mr-2">
               ${selectedVehicle.rent}
             </span>
             / rent per day
           </div>
           {selectedVehicle && <VehicleDetails vehicle={selectedVehicle} />}
-          <div className="bg-orange-600 text-white text-center px-4 py-3 text-sm font-bold mt-5 shadow-xl">
-            <button className="text-xl font-bold">RESERVE NOW</button>
+          <div className="bg-orange-600 text-white text-center px-2 py-2 sm:py-3 md:py-4 text-xs sm:text-sm md:text-md font-bold mt-4 sm:mt-5 md:mt-5 shadow-xl">
+            <button className="text-md sm:text-lg md:text-xl font-bold">
+              RESERVE NOW
+            </button>
           </div>
         </div>
       </div>

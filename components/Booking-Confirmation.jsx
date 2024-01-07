@@ -1,7 +1,7 @@
 import { BsInfo } from "react-icons/bs";
 import { IoMdClose } from "react-icons/io";
 import PersonalInfoCard from "./UI/PersonalInfo-Card";
-import { useEffect } from "react";
+// import { useEffect } from "react";
 
 export default function BookingConfirmation({ onClose }) {
   // useEffect(() => {

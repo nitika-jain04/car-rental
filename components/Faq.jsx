@@ -23,10 +23,10 @@ const faqData = [
 
 export default function Faq() {
   return (
-    <div className="bg-white px-20 py-20">
+    <div className="bg-white p-5 md:p-10 lg:p-20">
       <div className="flex flex-col items-center font-poppins">
-        <h5 className="font-bold text-2xl">FAQ</h5>
-        <h2 className="text-4xl font-bold mt-2 tracking-wide">
+        <h5 className="font-bold text-xl md:text-2xl lg:text-3xl">FAQ</h5>
+        <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold mt-2 tracking-wide">
           Frequently Asked Questions
         </h2>
         <p className="mt-5 text-gray-500 max-w-3xl text-center">
@@ -35,7 +35,7 @@ export default function Faq() {
         </p>
       </div>
 
-      <div className="mt-10 shadow-lg ml-52 mr-52">
+      <div className="mt-10 shadow-lg mx-2 md:mx-10 lg:mx-20">
         {faqData.map((data) => {
           return (
             <FaqCard

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { TbCar } from "react-icons/tb";
 import { FaLocationDot } from "react-icons/fa6";
 import { CiCalendarDate } from "react-icons/ci";
+import { IoMdClose } from "react-icons/io";
 import BookingConfirmation from "./Booking-Confirmation";
 
 export default function CarBooking() {
@@ -22,10 +23,22 @@ export default function CarBooking() {
 
   return (
     <div className="bg-white">
-      <form className="max-w-7xl mx-auto mt-5 p-12 bg-white rounded-md drop-shadow-xl">
+      <form className="max-w-7xl mx-auto mt-5 p-4 md:p-12 bg-white rounded-md drop-shadow-xl">
         <h1 className="text-2xl font-bold">Book a Car</h1>
-        <div className="flex gap-10 mt-6">
-          <div className="w-96">
+        {/* {(carType === "" ||
+          pickupLocation === "" ||
+          pickupDate === "" ||
+          dropoffLocation === "" ||
+          pickupDate === "") && (
+          <div className="bg-red-200 px-3 py-2 rounded-md mt-2 flex justify-between">
+            <p className="text-red-900 text-base tracking-wide">
+              All fields required!
+            </p>
+            <IoMdClose className="text-red-900 text-xl" />
+          </div>
+        )} */}
+        <div className="flex flex-col md:flex-row md:space-x-4 mt-6">
+          <div className="w-full md:w-1/3">
             <div className="flex gap-2 items-center">
               <TbCar className="text-2xl mb-2" />
               <label htmlFor="carType" className="block font-bold mb-2">
@@ -52,7 +65,7 @@ export default function CarBooking() {
             </select>
           </div>
 
-          <div className="w-96">
+          <div className="w-full md:w-1/3">
             <div className="flex gap-2 items-center">
               <FaLocationDot className="text-2xl mb-2" />
               <label htmlFor="pickupLocation" className="block font-bold mb-2">
@@ -81,7 +94,7 @@ export default function CarBooking() {
             </select>
           </div>
 
-          <div className="w-96">
+          <div className="w-full md:w-1/3">
             <div className="flex gap-2 items-center">
               <FaLocationDot className="text-2xl mb-2" />
               <label htmlFor="dropoffLocation" className="block font-bold mb-2">
@@ -108,8 +121,8 @@ export default function CarBooking() {
           </div>
         </div>
 
-        <div className="flex gap-10 mt-6 items-center">
-          <div>
+        <div className="flex flex-col md:flex-row md:space-x-4 mt-6 items-center">
+          <div className="w-full md:w-1/3">
             <div className="flex gap-2 items-center">
               <CiCalendarDate className="text-2xl mb-2 font-extrabold" />
               <label htmlFor="pickupDate" className="block font-bold mb-2">
@@ -127,7 +140,7 @@ export default function CarBooking() {
             />
           </div>
 
-          <div>
+          <div className="w-full md:w-1/3">
             <div>
               <div className="flex gap-2 items-center">
                 <CiCalendarDate className="text-2xl mb-2 font-extrabold" />
@@ -147,7 +160,7 @@ export default function CarBooking() {
             />
           </div>
 
-          <div>
+          <div className="w-full md:w-1/3">
             <button
               type="button"
               onClick={handleCustomerInfo}
