@@ -29,7 +29,7 @@ export default function Faq() {
         <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold mt-2 tracking-wide">
           Frequently Asked Questions
         </h2>
-        <p className="mt-5 text-gray-500 max-w-3xl text-center">
+        <p className="mt-5 text-gray-500 max-w-2xl text-center">
           Frequently Asked Questions About the Car Rental Booking Process on Our
           Website: Answers to Common Concerns and Inquiries.
         </p>

@@ -1,9 +1,14 @@
 import { BsInfo } from "react-icons/bs";
 import { IoMdClose } from "react-icons/io";
 import PersonalInfoCard from "./UI/PersonalInfo-Card";
+import { useState } from "react";
 // import { useEffect } from "react";
 
 export default function BookingConfirmation({ onClose }) {
+  const [isButtonDisabled, setIsButtonDisabled] = useState(true);
+
+  function handleClick() {}
+
   // useEffect(() => {
   //   document.body.classList.add("overflow-hidden");
 
@@ -72,7 +77,11 @@ export default function BookingConfirmation({ onClose }) {
         </div>
 
         <div className="bg-gray-300 px-5 py-10 mt-3 flex justify-end">
-          <button className="text-white text-2xl font-bold w-48 bg-orange-600 py-2 border border-white">
+          <button
+            className="text-white text-2xl font-bold w-48 bg-orange-600 py-2 border border-white"
+            onClick={handleClick}
+            disabled={isButtonDisabled}
+          >
             Reserve Now
           </button>
         </div>

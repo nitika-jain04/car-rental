@@ -15,8 +15,8 @@ export default function SigninPage() {
   };
 
   return (
-    <div className="flex flex-col gap-5">
-      <h1 className="mt-5 ml-48 font-bold">Sign in Page</h1>
+    <div className="flex flex-col gap-5 justify-center items-center">
+      <h1 className="mt-5 font-bold">Sign in Page</h1>
       <div className="flex gap-2 px-10 py-5">
         <label>Enter your email</label>
         <input
@@ -41,7 +41,7 @@ export default function SigninPage() {
 
       <button
         onClick={signinUser}
-        className="flex ml-20 mt-5 w-20 px-2 py-2 bg-red-400 text-white text-center"
+        className="flex mt-5 w-20 px-2 py-2 bg-red-400 text-white text-center"
       >
         Sign in
       </button>

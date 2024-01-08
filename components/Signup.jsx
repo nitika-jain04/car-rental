@@ -15,8 +15,8 @@ export default function SignupPage() {
   };
 
   return (
-    <div className="flex flex-col gap-5 justify-center">
-      <h1 className="ml-48 font-bold">Sign up Page</h1>
+    <div className="flex flex-col gap-5 justify-center items-center">
+      <h1 className="font-bold mt-5">Sign up Page</h1>
       <div className="flex gap-2 px-10 py-5">
         <label>Email</label>
         <input
@@ -45,7 +45,7 @@ export default function SignupPage() {
 
       <button
         onClick={createUser}
-        className="flex ml-20 w-28 px-5 py-2 bg-red-400 text-white"
+        className="flex w-28 px-5 py-2 bg-red-400 text-white"
       >
         Sign up
       </button>
