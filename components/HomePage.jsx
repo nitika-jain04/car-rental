@@ -6,7 +6,7 @@ export default function HeroSection() {
   return (
     <div className="bg-gray-50">
       <Navbar />
-      <div className="flex flex-col md:flex-row md:mt-20 ml-4 md:ml-10 lg:ml-20 lg:mt-32">
+      <div className="flex flex-col md:flex-row md:mt-20 ml-4 md:ml-10 lg:ml-20 lg:mt-28">
         <div className="lg:mb-60 md:mt-8 md:mb-0 md:mr-20">
           <h4 className="font-extrabold text-lg md:text-xl lg:text-2xl">
             Plan your trip now
