@@ -7,6 +7,7 @@ export default function TestimonialsPage() {
   return (
     <div>
       <PreHeroSection />
+
       <Testimonials />
       <Support />
       <Info />
