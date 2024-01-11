@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../Navbar";
 
-export default function PreHeroSection() {
+export default function PreHerosection() {
   const backgroundStyle = {
     backgroundImage: 'url("/car-bg.png")',
     backgroundSize: "contain",
