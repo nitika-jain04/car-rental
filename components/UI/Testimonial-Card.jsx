@@ -7,7 +7,7 @@ export default function TestimonialsCard({
   location,
 }) {
   return (
-    <div className=" flex flex-col gap-4 px-12 py-14 bg-white ml-10">
+    <div className=" flex flex-col gap-4 px-12 py-14 bg-white ml-10 hover:scale-105">
       <div className="max-w-3xl">
         <p className="font-medium text-[24px] tracking-tight leading-7 font-poppins">{`"${review}"`}</p>
       </div>

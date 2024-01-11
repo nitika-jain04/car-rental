@@ -58,7 +58,7 @@ export default function Info() {
             type="email"
             placeholder="Enter Email Address"
           />
-          <button className="bg-orange-600 px-3 py-2 text-white tracking-wide font-medium">
+          <button className="bg-orange-600 px-3 py-2 text-white tracking-wide font-medium hover:shadow-lg hover:shadow-orange-500">
             Submit
           </button>
         </div>

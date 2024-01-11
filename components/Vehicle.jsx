@@ -156,7 +156,7 @@ export default function Vehicle() {
             / rent per day
           </div>
           {selectedVehicle && <VehicleDetails vehicle={selectedVehicle} />}
-          <div className="bg-orange-600 text-white text-center px-2 py-2 sm:py-3 md:py-4 text-xs sm:text-sm md:text-md font-bold mt-4 sm:mt-5 md:mt-5 shadow-xl">
+          <div className="bg-orange-600 text-white text-center px-2 py-2 sm:py-3 md:py-4 text-xs sm:text-sm md:text-md font-bold mt-4 sm:mt-5 md:mt-5 hover:shadow-lg hover:shadow-orange-500">
             <button className="text-md sm:text-lg md:text-xl font-bold">
               RESERVE NOW
             </button>

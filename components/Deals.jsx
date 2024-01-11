@@ -40,7 +40,7 @@ export default function Deals() {
             the bank. Our deals are designed to give you the ultimate renting
             experience, so don't miss out on your chance to save big.
           </p>
-          <button className="flex items-center gap-2 bg-orange-600 text-white font-bold px-8 py-5 mt-8 rounded-sm max-w-48 font-poppins">
+          <button className="flex items-center gap-2 bg-orange-600 text-white font-bold px-8 py-5 mt-8 rounded-sm max-w-48 font-poppins hover:shadow-lg hover:shadow-orange-500">
             <h1>Find Details</h1>
             <GoChevronRight className="text-2xl font-extrabold" />
           </button>

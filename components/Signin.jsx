@@ -41,7 +41,7 @@ export default function SigninPage() {
 
       <button
         onClick={signinUser}
-        className="flex mt-5 w-20 px-2 py-2 bg-red-400 text-white text-center"
+        className="flex mt-5 w-20 px-2 py-2 bg-red-400 text-white text-center hover:shadow-lg hover:shadow-orange-500"
       >
         Sign in
       </button>

@@ -45,7 +45,7 @@ export default function SignupPage() {
 
       <button
         onClick={createUser}
-        className="flex w-28 px-5 py-2 bg-red-400 text-white"
+        className="flex w-28 px-5 py-2 bg-red-400 text-white hover:shadow-lg hover:shadow-orange-500"
       >
         Sign up
       </button>
