@@ -3,7 +3,7 @@ import TestimonialsCard from "./UI/Testimonial-Card";
 export default function Testimonials() {
   const testimonialsData = [
     {
-      image: "/harryPotter.jpg",
+      image: "/harrypotter.jpg",
       fullName: "Parry Hotter",
       location: "Belgrade",
       review:
