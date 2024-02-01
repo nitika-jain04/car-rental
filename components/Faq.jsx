@@ -35,7 +35,7 @@ export default function Faq() {
         </p>
       </div>
 
-      <div className="mt-10 shadow-lg mx-2 md:mx-10 lg:mx-20">
+      <div className="mt-10 shadow-lg ml-52 max-w-3xl">
         {faqData.map((data) => {
           return (
             <FaqCard
